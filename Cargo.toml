@@ -1,0 +1,44 @@
+[package]
+name = "oraclex"
+version = "0.1.0"
+edition = "2021"
+authors = ["Security Researcher"]
+description = "Oracle Desynchronization Risk Simulator for DeFi Security Auditing"
+license = "MIT"
+repository = "https://github.com/yourusername/oraclex-rs"
+keywords = ["defi", "oracle", "security", "audit", "blockchain"]
+categories = ["simulation", "finance"]
+
+[dependencies]
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# CLI
+clap = { version = "4.4", features = ["derive"] }
+
+# Time handling
+chrono = { version = "0.4", features = ["serde"] }
+
+# Error handling
+thiserror = "1.0"
+anyhow = "1.0"
+
+# Terminal output
+colored = "2.1"
+prettytable-rs = "0.10"
+
+# Math utilities
+ordered-float = "4.2"
+
+[dev-dependencies]
+# Testing
+assert_approx_eq = "1.1"
+
+[[bin]]
+name = "oraclex"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
+lto = true

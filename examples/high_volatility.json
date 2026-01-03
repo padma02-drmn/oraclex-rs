@@ -1,0 +1,72 @@
+{
+    "description": "High volatility scenario simulating flash crash and recovery",
+    "prices": [
+        {
+            "timestamp": 1700000000,
+            "price": 2000.0
+        },
+        {
+            "timestamp": 1700000060,
+            "price": 2010.0
+        },
+        {
+            "timestamp": 1700000120,
+            "price": 1950.0
+        },
+        {
+            "timestamp": 1700000180,
+            "price": 1800.0
+        },
+        {
+            "timestamp": 1700000240,
+            "price": 1700.0
+        },
+        {
+            "timestamp": 1700000300,
+            "price": 1650.0
+        },
+        {
+            "timestamp": 1700000360,
+            "price": 1750.0
+        },
+        {
+            "timestamp": 1700000420,
+            "price": 1850.0
+        },
+        {
+            "timestamp": 1700000480,
+            "price": 1900.0
+        },
+        {
+            "timestamp": 1700000540,
+            "price": 1950.0
+        },
+        {
+            "timestamp": 1700000600,
+            "price": 1980.0
+        },
+        {
+            "timestamp": 1700000660,
+            "price": 2000.0
+        },
+        {
+            "timestamp": 1700000720,
+            "price": 2050.0
+        },
+        {
+            "timestamp": 1700000780,
+            "price": 2100.0
+        },
+        {
+            "timestamp": 1700000840,
+            "price": 2080.0
+        }
+    ],
+    "twap_window_sec": 300,
+    "ema_alpha": 0.1,
+    "max_oracle_delay_sec": 300,
+    "liquidation_threshold": 0.80,
+    "high_deviation_threshold_pct": 2.0,
+    "high_duration_threshold_sec": 120,
+    "verbose": true
+}

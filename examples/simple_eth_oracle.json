@@ -1,0 +1,21 @@
+{
+  "description": "Simple ETH oracle simulation with stable prices",
+  "prices": [
+    { "timestamp": 1700000000, "price": 2000.0 },
+    { "timestamp": 1700000060, "price": 2005.0 },
+    { "timestamp": 1700000120, "price": 2010.0 },
+    { "timestamp": 1700000180, "price": 2008.0 },
+    { "timestamp": 1700000240, "price": 2012.0 },
+    { "timestamp": 1700000300, "price": 2015.0 },
+    { "timestamp": 1700000360, "price": 2010.0 },
+    { "timestamp": 1700000420, "price": 2005.0 },
+    { "timestamp": 1700000480, "price": 2000.0 },
+    { "timestamp": 1700000540, "price": 2002.0 }
+  ],
+  "twap_window_sec": 300,
+  "ema_alpha": 0.1,
+  "max_oracle_delay_sec": 600,
+  "liquidation_threshold": 0.85,
+  "high_deviation_threshold_pct": 2.0,
+  "high_duration_threshold_sec": 120
+}
