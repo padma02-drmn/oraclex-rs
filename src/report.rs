@@ -3,7 +3,7 @@
 //! This module provides utilities for generating human-readable
 //! and machine-parseable reports from simulation results.
 
-use crate::types::{DesyncEvent, RiskLevel, SimulationResult};
+use crate::types::{RiskLevel, SimulationResult};
 use colored::Colorize;
 use std::io::Write;
 
@@ -267,7 +267,7 @@ pub fn print_summary(result: &SimulationResult) {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::types::{DesyncFlag, OracleStatsSummary, SimulationMetadata};
+    use crate::types::{DesyncEvent, DesyncFlag, OracleStatsSummary, SimulationMetadata};
 
     fn create_test_result() -> SimulationResult {
         SimulationResult {
