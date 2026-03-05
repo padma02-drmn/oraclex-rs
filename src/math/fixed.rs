@@ -178,7 +178,7 @@ pub fn div_round_up(numerator: u128, denominator: u128) -> Option<u128> {
     if denominator == 0 {
         return None;
     }
-    Some((numerator + denominator - 1) / denominator)
+    Some(numerator.div_ceil(denominator))
 }
 
 /// Multiply then divide with higher precision
@@ -188,7 +188,7 @@ pub fn mul_div(a: u128, b: u128, denominator: u128) -> Option<u128> {
     }
 
     // Use u256 for intermediate calculation (simulated with two u128s)
-    let product = a as u128 * b as u128;
+    let product = a * b;
     Some(product / denominator)
 }
 
