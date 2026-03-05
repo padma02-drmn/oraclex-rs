@@ -3,6 +3,9 @@
 //! A Rust-based CLI tool for analyzing oracle timing and desynchronization
 //! risks in DeFi protocols.
 
+#![allow(dead_code)]
+#![allow(clippy::wrong_self_convention)]
+
 mod config;
 mod engine;
 mod math;
