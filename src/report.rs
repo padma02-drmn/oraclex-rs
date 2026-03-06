@@ -3,7 +3,7 @@
 //! This module provides utilities for generating human-readable
 //! and machine-parseable reports from simulation results.
 
-use crate::types::{DesyncEvent, RiskLevel, SimulationResult};
+use crate::types::{RiskLevel, SimulationResult};
 use colored::Colorize;
 use std::io::Write;
 
@@ -25,7 +25,7 @@ pub fn generate_terminal_report(result: &SimulationResult) -> String {
     output.push_str(&format!("\n{}\n", "═".repeat(60).bright_blue()));
     output.push_str(&format!(
         "{}  OracleX Simulation Report\n",
-        "🔮".to_string()
+        "🔮"
     ));
     output.push_str(&format!("{}\n\n", "═".repeat(60).bright_blue()));
 
@@ -207,7 +207,7 @@ pub fn generate_markdown_report(result: &SimulationResult) -> String {
         for flag in &result.flags {
             output.push_str(&format!("- ⚠️ `{}`\n", flag));
         }
-        output.push_str("\n");
+        output.push('\n');
     }
 
     // Events Table
@@ -227,7 +227,7 @@ pub fn generate_markdown_report(result: &SimulationResult) -> String {
                 event.risk_level
             ));
         }
-        output.push_str("\n");
+        output.push('\n');
     }
 
     // Oracle Statistics
@@ -267,7 +267,7 @@ pub fn print_summary(result: &SimulationResult) {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::types::{DesyncFlag, OracleStatsSummary, SimulationMetadata};
+    use crate::types::{DesyncEvent, DesyncFlag, OracleStatsSummary, SimulationMetadata};
 
     fn create_test_result() -> SimulationResult {
         SimulationResult {
