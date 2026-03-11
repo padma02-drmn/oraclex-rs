@@ -2,7 +2,8 @@
 
 [![Rust](https://img.shields.io/badge/rust-1.70%2B-orange.svg)](https://www.rust-lang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Security](https://img.shields.io/badge/focus-DeFi%20Security-red.svg)](https://github.com/yourusername/oraclex-rs)
+[![CI](https://github.com/padma02-drmn/oraclex-rs/actions/workflows/ci.yml/badge.svg)](https://github.com/padma02-drmn/oraclex-rs/actions/workflows/ci.yml)
+[![Security](https://img.shields.io/badge/focus-DeFi%20Security-red.svg)](https://github.com/padma02-drmn/oraclex-rs)
 
 > **Auditor-grade Oracle Desynchronization Risk Simulator for DeFi Protocols**
 
@@ -21,7 +22,7 @@ OracleX is a Rust-based command-line tool that simulates and analyzes oracle des
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/oraclex-rs.git
+git clone https://github.com/padma02-drmn/oraclex-rs.git
 cd oraclex-rs
 
 # Build the project

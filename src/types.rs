@@ -303,7 +303,7 @@ mod tests {
     fn test_price_point_change() {
         let p1 = PricePoint::new(1000, 100.0);
         let p2 = PricePoint::new(1060, 105.0);
-        
+
         assert_eq!(p2.price_change_pct(&p1), 5.0);
         assert_eq!(p2.time_diff(&p1), 60);
     }
